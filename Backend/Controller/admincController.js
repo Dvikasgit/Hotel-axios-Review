@@ -10,7 +10,7 @@ try {
           res.status(400).json("User already exits")
     }
     else{
-        const userdata =await adminModel.create({email:email , password:password})
+        const userdata =await adminModel.create({fName:fName, email:email , password:password})
         res.status(200).json(userdata)
     }
 } catch (error) {
